@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos da Fê - Bordados Personalizados | Simulação de Preço</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Playfair Display & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F9F6F0',
+                        warmcard: '#FFFDF9',
+                        softpink: '#F5EBE6',
+                        rosebrand: '#A83256',
+                        roserover: '#92294A',
+                        mossgreen: '#4A5D4E',
+                        mossedark: '#38463B',
+                        inputbg: '#FCFCFB',
+                        bordercol: '#E8DFD8'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Poppins"', 'sans-serif'],
+                        script: ['"Playfair Display"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F5EBE6;
+            color: #38463B;
+        }
+        .brand-title {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between py-6 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#F5EBE6] via-[#F9F6F0] to-[#EFE2DA]">
+
+    <main class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start my-auto">
+        
+        <!-- ================= COLUNA ESQUERDA: APRESENTAÇÃO E BENEFÍCIOS ================= -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-8 pt-4 lg:pr-4">
+            
+            <!-- Logotipo e Subtítulo -->
+            <div class="space-y-1">
+                <div class="flex items-center space-x-2 text-rosebrand">
+                    <i class="fa-solid fa-heart text-sm animate-pulse"></i>
+                    <div class="h-[1px] w-16 bg-rosebrand/40"></div>
+                </div>
+                <h1 class="brand-title text-4xl sm:text-5xl font-bold tracking-tight text-[#38463B]">
+                    Pontos da Fê
+                </h1>
+                <p class="text-xs sm:text-sm uppercase tracking-[0.25em] font-medium text-mossgreen">
+                    Bordados Personalizados
+                </p>
+            </div>
+
+            <!-- Título de Destaque -->
+            <div class="space-y-4">
+                <h2 class="brand-title text-4xl sm:text-5xl lg:text-6xl font-extrabold text-rosebrand leading-tight italic">
+                    Transforme <br>
+                    <span class="text-mossgreen not-italic font-bold">ideias em</span> bordados!
+                </h2>
+                <p class="text-sm sm:text-base text-[#526355] leading-relaxed">
+                    Conte um pouco sobre o bordado que você imagina e envie uma foto de referência. Eu recebo tudo por e-mail e preparo uma simulação de preço para você.
+                </p>
+            </div>
+
+            <!-- Divisor decorativo -->
+            <div class="flex items-center justify-center lg:justify-start space-x-3 text-rosebrand py-1">
+                <div class="h-[1px] w-12 bg-rosebrand/30"></div>
+                <i class="fa-solid fa-heart text-xs"></i>
+                <div class="h-[1px] w-12 bg-rosebrand/30"></div>
+            </div>
+
+            <!-- 3 Blocos de Benefícios -->
+            <div class="space-y-4">
+                <!-- Benefício 1 -->
+                <div class="flex items-center space-x-4 bg-white/60 backdrop-blur-sm p-3.5 rounded-2xl border border-bordercol/60 shadow-sm transition-all hover:bg-white">
+                    <div class="w-12 h-12 rounded-full bg-rosebrand text-white flex items-center justify-center shrink-0 shadow-md">
+                        <i class="fa-solid fa-heart text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-sm sm:text-base text-[#38463B]">Bordados feitos com carinho</h3>
+                        <p class="text-xs sm:text-sm text-gray-600">Cada detalhe importa.</p>
+                    </div>
+                </div>
+
+                <!-- Benefício 2 -->
+                <div class="flex items-center space-x-4 bg-white/60 backdrop-blur-sm p-3.5 rounded-2xl border border-bordercol/60 shadow-sm transition-all hover:bg-white">
+                    <div class="w-12 h-12 rounded-full bg-mossgreen text-white flex items-center justify-center shrink-0 shadow-md">
+                        <i class="fa-solid fa-star text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-sm sm:text-base text-[#38463B]">Personalização completa</h3>
+                        <p class="text-xs sm:text-sm text-gray-600">Do seu jeito, do seu gosto.</p>
+                    </div>
+                </div>
+
+                <!-- Benefício 3 -->
+                <div class="flex items-center space-x-4 bg-white/60 backdrop-blur-sm p-3.5 rounded-2xl border border-bordercol/60 shadow-sm transition-all hover:bg-white">
+                    <div class="w-12 h-12 rounded-full bg-rosebrand/80 text-white flex items-center justify-center shrink-0 shadow-md">
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-sm sm:text-base text-[#38463B]">Atendimento por e-mail</h3>
+                        <p class="text-xs sm:text-sm text-gray-600">Rápido e prático.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagem ilustrativa ou Bastidor decorativo -->
+            <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white/40 p-4 flex items-center justify-center group">
+                <div class="absolute inset-0 bg-gradient-to-t from-mossgreen/20 to-transparent pointer-events-none"></div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-24 h-24 rounded-full border-4 border-rosebrand/40 overflow-hidden shadow-inner flex items-center justify-center bg-pink-50 shrink-0">
+                        <!-- Imagem de pré-visualização de bastidor -->
+                        <img src="https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=300&q=80" alt="Bordado artesanal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/150x150/F5EBE6/A83256?text=Bordado'">
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-rosebrand bg-rosebrand/10 px-2.5 py-1 rounded-full">Peça Exclusiva</span>
+                        <h4 class="brand-title text-lg font-bold text-mossgreen mt-1">Feito à mão para você</h4>
+                        <p class="text-xs text-gray-600">Transformando memórias em arte têxtil.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= COLUNA DIREITA: FORMULÁRIO DE SIMULAÇÃO ================= -->
+        <div class="lg:col-span-7 bg-warmcard shadow-2xl rounded-3xl border border-bordercol/80 p-6 sm:p-8 lg:p-10 relative overflow-hidden">
+            
+            <!-- Detalhe decorativo topo -->
+            <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-rosebrand via-mossgreen to-rosebrand"></div>
+
+            <!-- Cabeçalho do Formulário -->
+            <div class="text-center space-y-2 mb-8">
+                <div class="inline-flex items-center justify-center text-rosebrand space-x-2">
+                    <div class="h-[1px] w-8 bg-rosebrand/40"></div>
+                    <i class="fa-solid fa-heart text-xs"></i>
+                    <div class="h-[1px] w-8 bg-rosebrand/40"></div>
+                </div>
+                <h2 class="brand-title text-2xl sm:text-3xl font-bold text-[#38463B]">
+                    Solicite Sua Simulação de Preço
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-600 max-w-md mx-auto">
+                    Preencha os campos abaixo com as informações do seu bordado. É rapidinho!
+                </p>
+            </div>
+
+            <!-- Formulário Principal -->
+            <form id="simulationForm" class="space-y-5" novalidate>
+                
+                <!-- Nome -->
+                <div class="space-y-1.5">
+                    <label for="fullName" class="block text-xs sm:text-sm font-semibold text-[#38463B]">
+                        Qual é o seu nome? <span class="text-rosebrand">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+                            <i class="fa-regular fa-user text-sm"></i>
+                        </span>
+                        <input type="text" id="fullName" name="fullName" required
+                            class="w-full pl-10 pr-4 py-3 bg-inputbg border border-bordercol rounded-xl text-sm text-[#38463B] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rosebrand/50 focus:border-rosebrand transition-all"
+                            placeholder="Nome">
+                    </div>
+                    <p class="error-msg text-xs text-rosebrand hidden pl-1">Por favor, insira seu nome.</p>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="space-y-1.5">
+                    <label for="whatsapp" class="block text-xs sm:text-sm font-semibold text-[#38463B]">
+                        Seu WhatsApp <span class="text-rosebrand">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </span>
+                        <input type="tel" id="whatsapp" name="whatsapp" required
+                            class="w-full pl-10 pr-4 py-3 bg-inputbg border border-bordercol rounded-xl text-sm text-[#38463B] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rosebrand/50 focus:border-rosebrand transition-all"
+                            placeholder="87 98888-8888">
+                    </div>
+                    <p class="error-msg text-xs text-rosebrand hidden pl-1">Por favor, insira um WhatsApp válido.</p>
+                </div>
+
+                <!-- O que será bordado? -->
+                <div class="space-y-1.5">
+                    <label for="itemType" class="block text-xs sm:text-sm font-semibold text-[#38463B]">
+                        O que será bordado? <span class="text-rosebrand">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+                            <i class="fa-solid fa-list-ul text-sm"></i>
+                        </span>
+                        <select id="itemType" name="itemType" required
+                            class="w-full pl-10 pr-10 py-3 bg-inputbg border border-bordercol rounded-xl text-sm text-[#38463B] focus:outline-none focus:ring-2 focus:ring-rosebrand/50 focus:border-rosebrand transition-all appearance-none cursor-pointer">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="Bastidor (Bastidor decorativo)">Bastidor decorativo</option>
+                            <option value="Roupa (Camisa, Jaqueta, Vestido)">Roupa (Camisa, Jaqueta, Vestido)</option>
+                            <option value="Enxoval de Bebê">Enxoval de Bebê</option>
+                            <option value="Toalha (Banho ou Rosto)">Toalha (Banho ou Rosto)</option>
+                            <option value="Outro item personalizado">Outro item personalizado</option>
+                        </select>
+                        <span class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-gray-400">
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </span>
+                    </div>
+                    <p class="error-msg text-xs text-rosebrand hidden pl-1">Por favor, selecione uma opção.</p>
+                </div>
+
+                <!-- Quantas peças serão bordadas? -->
+                <div class="space-y-1.5">
+                    <label for="quantity" class="block text-xs sm:text-sm font-semibold text-[#38463B]">
+                        Quantas peças serão bordadas? <span class="text-rosebrand">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400 font-bold text-sm">
+                            #
+                        </span>
+                        <input type="number" id="quantity" name="quantity" min="1" required
+                            class="w-full pl-10 pr-4 py-3 bg-inputbg border border-bordercol rounded-xl text-sm text-[#38463B] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rosebrand/50 focus:border-rosebrand transition-all"
+                            placeholder="Insira um número">
+                    </div>
+                    <p class="error-msg text-xs text-rosebrand hidden pl-1">Por favor, informe a quantidade de peças.</p>
+                </div>
+
+                <!-- Qual o tamanho aproximado do bordado? -->
+                <div class="space-y-1.5">
+                    <label for="size" class="block text-xs sm:text-sm font-semibold text-[#38463B]">
+                        Qual o tamanho aproximado do bordado? <span class="text-rosebrand">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+                            <i class="fa-solid fa-expand text-sm"></i>
+                        </span>
+                        <input type="text" id="size" name="size" required
+                            class="w-full pl-10 pr-4 py-3 bg-inputbg border border-bordercol rounded-xl text-sm text-[#38463B] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rosebrand/50 focus:border-rosebrand transition-all"
+                            placeholder="ex: 10 x 10 cm">
+                    </div>
+                    <p class="error-msg text-xs text-rosebrand hidden pl-1">Por favor, informe o tamanho estimado.</p>
+                </div>
+
+                <!-- Envie uma foto ou uma referência do bordado -->
+                <div class="space-y-1.5">
+                    <label class="block text-xs sm:text-sm font-semibold text-[#38463B]">
+                        Envie uma foto ou uma referência do bordado <span class="text-rosebrand">*</span>
+                    </label>
+                    
+                    <div id="dropZone" class="border-2 border-dashed border-bordercol rounded-2xl p-6 text-center bg-inputbg hover:border-rosebrand/60 transition-all cursor-pointer relative group">
+                        <input type="file" id="referenceImage" name="referenceImage" accept="image/jpeg, image/png, image/webp" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full z-10">
+                        
+                        <div id="uploadPrompt" class="space-y-2 pointer-events-none">
+                            <div class="w-12 h-12 rounded-full bg-rosebrand/10 text-rosebrand mx-auto flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-cloud-arrow-up text-xl"></i>
+                            </div>
+                            <p class="text-xs sm:text-sm font-medium text-[#38463B]">
+                                Clique para enviar ou arraste a imagem aqui
+                            </p>
+                            <p class="text-[11px] text-gray-400">Formatos aceitos: JPG, PNG (máx. 10MB)</p>
+                        </div>
+
+                        <!-- Preview Container (Oculto inicialmente) -->
+                        <div id="previewContainer" class="hidden flex-col items-center space-y-2 relative z-20">
+                            <img id="imagePreview" src="" alt="Pré-visualização" class="max-h-32 rounded-lg object-contain shadow-sm border border-bordercol">
+                            <p id="fileName" class="text-xs font-medium text-mossgreen truncate max-w-xs"></p>
+                            <button type="button" id="removeFileBtn" class="text-xs text-rosebrand hover:underline font-medium px-2 py-1 bg-white rounded-md border border-rosebrand/20 shadow-xs">
+                                <i class="fa-solid fa-trash-can mr-1"></i> Escolher outra imagem
+                            </button>
+                        </div>
+                    </div>
+                    <p id="fileError" class="text-xs text-rosebrand hidden pl-1">Por favor, envie uma foto ou referência.</p>
+                </div>
+
+                <!-- Descreva o bordado que você imagina -->
+                <div class="space-y-1.5">
+                    <label for="description" class="block text-xs sm:text-sm font-semibold text-[#38463B]">
+                        Descreva o bordado que você imagina: motivo, cores, frase ou outros detalhes
+                    </label>
+                    <div class="relative">
+                        <span class="absolute top-3.5 left-3.5 pointer-events-none text-gray-400">
+                            <i class="fa-solid fa-pen text-sm"></i>
+                        </span>
+                        <textarea id="description" name="description" rows="3"
+                            class="w-full pl-10 pr-4 py-3 bg-inputbg border border-bordercol rounded-xl text-sm text-[#38463B] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rosebrand/50 focus:border-rosebrand transition-all resize-y"
+                            placeholder="Conte todos os detalhes que desejar..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Botão CTA -->
+                <div class="pt-2">
+                    <button type="submit" id="submitBtn"
+                        class="w-full py-3.5 px-6 bg-rosebrand hover:bg-roserover text-white font-semibold rounded-xl shadow-lg shadow-rosebrand/20 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base group cursor-pointer">
+                        <span class="tracking-wide">Enviar para simulação</span>
+                        <i class="fa-solid fa-paper-plane text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                </div>
+
+                <!-- Mensagem de Segurança -->
+                <div class="flex items-center justify-center space-x-2 text-gray-500 text-xs pt-1">
+                    <i class="fa-solid fa-lock text-[11px] text-mossgreen"></i>
+                    <span>Seus dados estão seguros. Garantimos a sua privacidade.</span>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="w-full max-w-7xl mx-auto text-center mt-12 pt-6 border-t border-bordercol/60 space-y-3">
+        <div class="flex items-center justify-center space-x-2 text-rosebrand">
+            <div class="h-[1px] w-12 bg-rosebrand/40"></div>
+            <i class="fa-solid fa-heart text-sm"></i>
+            <div class="h-[1px] w-12 bg-rosebrand/40"></div>
+        </div>
+        <p class="brand-title text-xl sm:text-2xl font-bold text-rosebrand italic">
+            Bordar é dar vida às suas ideias!
+        </p>
+        <p class="text-xs text-gray-500">
+            © 2026 Pontos da Fê. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <!-- MODAL DE SUCESSO (Oculto por padrão) -->
+    <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-warmcard rounded-3xl max-w-md w-full p-8 shadow-2xl border border-bordercol text-center space-y-6 transform scale-95 transition-transform duration-300" id="modalContent">
+            
+            <div class="w-20 h-20 bg-mossgreen/10 text-mossgreen rounded-full flex items-center justify-center mx-auto text-3xl shadow-inner">
+                <i class="fa-solid fa-check animate-bounce"></i>
+            </div>
+
+            <div class="space-y-2">
+                <h3 class="brand-title text-2xl font-bold text-[#38463B]">Simulação Solicitada!</h3>
+                <p class="text-sm text-gray-600">
+                    Obrigada, <span id="modalUserName" class="font-semibold text-rosebrand"></span>! Recebi as informações do seu bordado com sucesso. Vou analisar os detalhes e entrarei em contato pelo WhatsApp em breve.
+                </p>
+            </div>
+
+            <div class="bg-cream p-4 rounded-2xl border border-bordercol text-xs text-left space-y-1.5">
+                <div class="flex justify-between">
+                    <span class="text-gray-500">Item:</span>
+                    <span id="modalItemType" class="font-medium text-[#38463B]"></span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-500">Quantidade:</span>
+                    <span id="modalQuantity" class="font-medium text-[#38463B]"></span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-500">Tamanho:</span>
+                    <span id="modalSize" class="font-medium text-[#38463B]"></span>
+                </div>
+            </div>
+
+            <button type="button" id="closeModalBtn"
+                class="w-full py-3 bg-mossgreen hover:bg-mossedark text-white font-semibold rounded-xl shadow-md transition-all text-sm cursor-pointer">
+                Concluir / Nova Simulação
+            </button>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('simulationForm');
+            const dropZone = document.getElementById('dropZone');
+            const fileInput = document.getElementById('referenceImage');
+            const uploadPrompt = document.getElementById('uploadPrompt');
+            const previewContainer = document.getElementById('previewContainer');
+            const imagePreview = document.getElementById('imagePreview');
+            const fileNameDisplay = document.getElementById('fileName');
+            const removeFileBtn = document.getElementById('removeFileBtn');
+            const fileError = document.getElementById('fileError');
+            
+            const successModal = document.getElementById('successModal');
+            const modalContent = document.getElementById('modalContent');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            
+            const modalUserName = document.getElementById('modalUserName');
+            const modalItemType = document.getElementById('modalItemType');
+            const modalQuantity = document.getElementById('modalQuantity');
+            const modalSize = document.getElementById('modalSize');
+
+            let selectedFile = null;
+
+            // Manipulação de arquivo (Input change)
+            fileInput.addEventListener('change', function(e) {
+                if (e.target.files && e.target.files[0]) {
+                    handleFile(e.target.files[0]);
+                }
+            });
+
+            // Drag and Drop
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropZone.addEventListener(eventName, (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dropZone.classList.add('border-rosebrand', 'bg-rosebrand/5');
+                }, false);
+            });
+
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropZone.addEventListener(eventName, (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dropZone.classList.remove('border-rosebrand', 'bg-rosebrand/5');
+                }, false);
+            });
+
+            dropZone.addEventListener('drop', (e) => {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                if (files && files[0]) {
+                    fileInput.files = files;
+                    handleFile(files[0]);
+                }
+            });
+
+            function handleFile(file) {
+                if (!file.type.match('image.*')) {
+                    alert('Por favor, envie apenas arquivos de imagem válidos (JPG, PNG).');
+                    return;
+                }
+                if (file.size > 10 * 1024 * 1024) {
+                    alert('A imagem é muito grande. O tamanho máximo permitido é 10MB.');
+                    return;
+                }
+
+                selectedFile = file;
+                fileError.classList.add('hidden');
+
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result;
+                    fileNameDisplay.textContent = file.name;
+                    uploadPrompt.classList.add('hidden');
+                    previewContainer.classList.remove('hidden');
+                    previewContainer.classList.add('flex');
+                }
+                reader.readAsDataURL(file);
+            }
+
+            removeFileBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                fileInput.value = '';
+                selectedFile = null;
+                imagePreview.src = '';
+                fileNameDisplay.textContent = '';
+                previewContainer.classList.add('hidden');
+                previewContainer.classList.remove('flex');
+                uploadPrompt.classList.remove('hidden');
+            });
+
+            // Validação e Envio do Formulário
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let isValid = true;
+                
+                // Validar campos obrigatórios
+                const fullName = document.getElementById('fullName');
+                const whatsapp = document.getElementById('whatsapp');
+                const itemType = document.getElementById('itemType');
+                const quantity = document.getElementById('quantity');
+                const size = document.getElementById('size');
+
+                const fields = [
+                    { el: fullName, err: fullName.parentElement.nextElementSibling },
+                    { el: whatsapp, err: whatsapp.parentElement.nextElementSibling },
+                    { el: itemType, err: itemType.parentElement.nextElementSibling },
+                    { el: quantity, err: quantity.parentElement.nextElementSibling },
+                    { el: size, err: size.parentElement.nextElementSibling }
+                ];
+
+                fields.forEach(field => {
+                    if (!field.el.value.trim()) {
+                        field.err.classList.remove('hidden');
+                        field.el.classList.add('border-rosebrand');
+                        isValid = false;
+                    } else {
+                        field.err.classList.add('hidden');
+                        field.el.classList.remove('border-rosebrand');
+                    }
+                });
+
+                // Validar imagem de referência
+                if (!selectedFile) {
+                    fileError.classList.remove('hidden');
+                    dropZone.classList.add('border-rosebrand');
+                    isValid = false;
+                } else {
+                    fileError.classList.add('hidden');
+                    dropZone.classList.remove('border-rosebrand');
+                }
+
+                if (!isValid) {
+                    // Rolar até o primeiro erro
+                    const firstError = form.querySelector('.border-rosebrand');
+                    if (firstError) {
+                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                    return;
+                }
+
+                // Preencher dados no Modal de Sucesso
+                modalUserName.textContent = fullName.value.split(' ')[0];
+                modalItemType.textContent = itemType.options[itemType.selectedIndex].text;
+                modalQuantity.textContent = quantity.value;
+                modalSize.textContent = size.value;
+
+                // Exibir Modal de Sucesso com animação
+                successModal.classList.remove('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            });
+
+            // Fechar modal e resetar formulário
+            closeModalBtn.addEventListener('click', function() {
+                successModal.classList.add('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('scale-100');
+                modalContent.classList.add('scale-95');
+                
+                form.reset();
+                selectedFile = null;
+                previewContainer.classList.add('hidden');
+                previewContainer.classList.remove('flex');
+                uploadPrompt.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+</html>
